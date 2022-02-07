@@ -9,5 +9,13 @@
 <body>
     Landing here
     hau 
+
+    <button onclick="redirectSmart()">Buton dinamic ce pune app. in fata la url curent</button>
+
+    <script>
+        function redirectSmart() {
+            window.location.href = window.location.origin.replace("https://", "https://app.");
+        }
+    </script>
 </body>
 </html>
