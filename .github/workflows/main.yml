@@ -15,7 +15,7 @@ defaults:
     shell: bash
 
 jobs:
-  build_stg:
+  build:
     if: ${{ success() && github.event_name != 'pull_request' && github.ref == 'refs/heads/develop' }}
     runs-on: ubuntu-latest
     steps:
