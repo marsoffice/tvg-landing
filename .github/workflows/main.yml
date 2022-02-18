@@ -16,7 +16,7 @@ defaults:
 
 jobs:
   build:
-    if: ${{ success() && github.event_name != 'pull_request' && github.ref == 'refs/heads/develop' }}
+    if: ${{ success() && github.event_name != 'pull_request' }}
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo
